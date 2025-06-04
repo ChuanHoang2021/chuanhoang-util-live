@@ -10,13 +10,13 @@ namespace ChuanHoangUtilLive
             byte i = 0;
             do
             {
-                Console.Write($"\rLoading...{i}%...in other thread!");
+                Console.Write($"\rLoading something...{i}%...in other thread!");
                 await Task.Delay(100);
                 i++;
             }
             while (i < 100);
             Console.WriteLine();
-            Console.WriteLine("End.");
+            Console.WriteLine("End of main thread.");
         }
     }
 }
